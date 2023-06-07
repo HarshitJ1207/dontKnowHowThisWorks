@@ -13,11 +13,9 @@ const errorController = require('./controllers/error');
 const User = require('./models/user');
 const helmet = require('helmet');
 const compression = require('compression');
-const morgan = require('morgan');
 const https = require('https');
 
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.9ronrfd.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
-const accessLogstream = fs.createWriteStream(path.join(__dirname , 'access.log') , {flags: 'a'});
 
 const app = express();
 const store = new MongoDBStore({
