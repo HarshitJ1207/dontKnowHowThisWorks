@@ -47,8 +47,8 @@ const fileFilter = (req, file, cb) => {
     }
 };
 
-const privateKey = fs.readFileSync('server.key');
-const certificate = fs.readFileSync('server.cert');
+// const privateKey = fs.readFileSync('server.key');
+// const certificate = fs.readFileSync('server.cert');
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
