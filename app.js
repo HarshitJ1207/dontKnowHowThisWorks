@@ -59,9 +59,9 @@ const authRoutes = require('./routes/auth');
 
 
 
-app.use(helmet());
-app.use(compression());
-app.use(morgan('combined', {stream: accessLogstream}));
+// app.use(helmet());
+// app.use(compression());
+// app.use(morgan('combined', {stream: accessLogstream}));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
