@@ -8,7 +8,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app.js",
+        "start": "set MONGO_USER=jain1207harshit&&set MONGO_PASSWORD=RkxX2945&&set MONGO_DATABASE=shop&&node app.js",
         "dev": "nodemon app.js",
         "start-server": "node app.js"
     },
@@ -21,7 +21,7 @@
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.20.2",
         "compression": "^1.7.4",
-        "connect-flash": "^0.1.1",
+        "connect-flash": "^0.1.1", 
         "connect-mongodb-session": "^3.1.1",
         "csurf": "^1.11.0",
         "ejs": "^3.1.9",

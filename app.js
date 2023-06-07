@@ -17,6 +17,7 @@ const morgan = require('morgan');
 const https = require('https');
 
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.9ronrfd.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
+console.log(MONGODB_URI);
 const accessLogstream = fs.createWriteStream(path.join(__dirname , 'access.log') , {flags: 'a'});
 
 const app = express();
